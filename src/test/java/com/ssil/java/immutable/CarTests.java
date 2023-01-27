@@ -21,10 +21,18 @@ public class CarTests {
         assertEquals(car.getMake(), "Audi");
         assertEquals(car.getNumber(), 9999);
 
-        Map<String, String> returnedSpec = car.getSpec();
+        Map<Integer, String> returnedSpec = car.getSpec();
 
         assertEquals(returnedSpec.size(), 2);
         String val = returnedSpec.get(2);
+        assertEquals("two", val);
+
+        spec.put(3, "three");
+        spec.put(4, "four");
+        assertEquals(spec.size(), 4);
+        assertEquals(returnedSpec.size(), 2);
+
+        val = returnedSpec.get(2);
         assertEquals("two", val);
     }
 

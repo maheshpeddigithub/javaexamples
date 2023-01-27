@@ -13,7 +13,7 @@ public final class Car {
         this.make = make;
         this.number = number;
         this.spec = new HashMap<>();
-        spec.forEach((k, v) -> this.spec.put(k, v));
+        this.spec.putAll(spec);
     }
 
     public String getMake() {
@@ -24,10 +24,10 @@ public final class Car {
         return number;
     }
 
-    public Map getSpec() {
+    public Map<Integer, String> getSpec() {
         Map<Integer, String> tempSpec = new HashMap<>();
-        spec.forEach((k, v) -> tempSpec.put(k, v));
-        return spec;
+        tempSpec.putAll(spec);
+        return tempSpec;
     }
 
 }
