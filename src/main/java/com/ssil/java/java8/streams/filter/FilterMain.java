@@ -3,7 +3,7 @@ package com.ssil.java.java8.streams.filter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Filter1Main {
+public class FilterMain {
 
     public static void main(String[] args) {
 

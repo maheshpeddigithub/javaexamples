@@ -14,12 +14,12 @@ public class MatchMain {
         //allMatch
         boolean b = Stream.of("z1", "a2", "c3", "b5")
                 .allMatch(str -> str.startsWith("z"));
-        System.out.println("AnyMatch-> " + b);
+        System.out.println("AllMatch-> " + b);
 
         //noneMatch
         boolean c = Stream.of("z1", "a2", "c3", "b5")
                 .noneMatch(str -> str.startsWith("d"));
-        System.out.println("AnyMatch-> " + c);
+        System.out.println("NoneMatch-> " + c);
 
     }
 

@@ -1,14 +1,10 @@
 package com.ssil.java.java8.streams.withobjects;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class Customer {
     private String name;
     private int age;
