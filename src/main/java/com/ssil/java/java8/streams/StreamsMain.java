@@ -275,17 +275,17 @@ public class StreamsMain {
     }
 
     public void findFirstEx() {
-        Optional<String> findfirst = Stream.of("a1", "a2", "a3", "a4", "a5")
+        Optional<String> find = Stream.of("a1", "a2", "a3", "a4", "a5")
                 .filter(str -> str.equals("a2"))
                 .findFirst();
-        findfirst.ifPresent(System.out::println);
+        find.ifPresent(System.out::println);
     }
 
     public void findAnyEx() {
-        Optional<String> findfirst = Stream.of("a1", "a2", "a3", "a4", "a5")
+        Optional<String> find = Stream.of("a1", "a2", "a3", "a4", "a5")
                 .filter(str -> str.equals("a2"))
                 .findAny();
-        findfirst.ifPresent(System.out::println);
+        find.ifPresent(System.out::println);
     }
 
 
