@@ -11,7 +11,7 @@ public class TaskService {
         this.repository = repository;
     }
 
-    public List<String> retrieveLengthyTasks() {
+    public List<String> retrieveLengthyTasks() throws TaskRetrievalException {
         return repository.getTasks().stream()
                 .filter(task -> task.length() > 5)
                 .collect(Collectors.toList());

@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface TaskRepository {
 
-    List<String> getTasks();
+    List<String> getTasks() throws TaskRetrievalException;
 
 }
